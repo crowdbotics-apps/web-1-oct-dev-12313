@@ -19,7 +19,7 @@ export class __Blank extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
-  state = { Input_4: "" }
+  state = { Input_4: "", Input_5: "", Input_7: "" }
   render = () => (
     <View style={this.props.themedStyle.View_1}>
       <Text style={this.props.themedStyle.Text_2}>Sample text content</Text>
@@ -49,6 +49,37 @@ export class __Blank extends React.Component {
         style={this.props.themedStyle.Input_4}
         value={this.state.Input_4}
         onChangeText={nextValue => this.setState({ Input_4: nextValue })}
+      />
+      <Input
+        placeholder="Sample text input placeholder"
+        editable={true}
+        multiline={true}
+        textStyle={{
+          height: 100,
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
+        }}
+        style={this.props.themedStyle.Input_5}
+        value={this.state.Input_5}
+        onChangeText={nextValue => this.setState({ Input_5: nextValue })}
+      />
+      <Text style={this.props.themedStyle.Text_6}>Sample text content</Text>
+      <Input
+        placeholder="Sample text input placeholder"
+        editable={true}
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
+        }}
+        style={this.props.themedStyle.Input_7}
+        value={this.state.Input_7}
+        onChangeText={nextValue => this.setState({ Input_7: nextValue })}
       />
     </View>
   )
@@ -147,6 +178,98 @@ _Blank = withStyles(__Blank, theme => ({
     letterSpacing: 0
   },
   Input_4: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Input_5: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Text_6: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Input_7: {
     width: "100%",
     marginLeft: 0,
     marginRight: 0,
