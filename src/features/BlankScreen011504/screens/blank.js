@@ -19,7 +19,7 @@ export class __Blank extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
-  state = { Input_4: "", Input_5: "", Input_7: "" }
+  state = { Input_4: "", Input_5: "", Input_7: "", Input_8: "" }
   render = () => (
     <View style={this.props.themedStyle.View_1}>
       <Text style={this.props.themedStyle.Text_2}>Sample text content</Text>
@@ -80,6 +80,20 @@ export class __Blank extends React.Component {
         style={this.props.themedStyle.Input_7}
         value={this.state.Input_7}
         onChangeText={nextValue => this.setState({ Input_7: nextValue })}
+      />
+      <Input
+        placeholder="Sample text input placeholder"
+        editable={true}
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
+        }}
+        style={this.props.themedStyle.Input_8}
+        value={this.state.Input_8}
+        onChangeText={nextValue => this.setState({ Input_8: nextValue })}
       />
     </View>
   )
@@ -270,6 +284,37 @@ _Blank = withStyles(__Blank, theme => ({
     letterSpacing: 0
   },
   Input_7: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Input_8: {
     width: "100%",
     marginLeft: 0,
     marginRight: 0,
